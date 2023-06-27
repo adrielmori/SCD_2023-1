@@ -12,14 +12,21 @@
 // }
 
 public class ExecutaThread {
+
   public static void main(String[] args) {
-      ThreadSimples simples = new ThreadSimples();
-      simples.run();
+    ThreadSimples simples = new ThreadSimples();
+    simples.run();
   }
 }
 
 class ThreadSimples implements Runnable {
+
+  public void run() {
+    System.out.println("Olá de uma thread!");
+  }
+}
+
+public class ThreadSimples implements Runnable {
   public void run() {
       System.out.println("Olá de uma thread!");
   }
-}
